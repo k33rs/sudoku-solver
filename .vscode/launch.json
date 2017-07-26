@@ -1,0 +1,84 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name":"launch server",
+      "type":"python",
+      "request":"launch",
+      "module":"flask",
+      "env": {
+        "FLASK_APP":"app.api.wsgi",
+        "FLASK_ENV":"development",
+        "FLASK_DEBUG":"0"
+      },
+      "args":["run","--no-debugger","--no-reload"],
+      "jinja":true
+    },
+    {
+      "name": "solve ai_escargot",
+      "type": "python",
+      "request": "launch",
+      "module": "app.solver",
+      "args": [
+        "puzzles/ai_escargot"
+      ]
+    },
+    {
+      "name": "solve diabolical1",
+      "type": "python",
+      "request": "launch",
+      "module": "app.solver",
+      "args": [
+        "puzzles/diabolical1"
+      ]
+    },
+    {
+      "name": "solve diabolical2",
+      "type": "python",
+      "request": "launch",
+      "module": "app.solver",
+      "args": [
+        "puzzles/diabolical2"
+      ]
+    },
+    {
+      "name": "solve diabolical3",
+      "type": "python",
+      "request": "launch",
+      "module": "app.solver",
+      "args": [
+        "puzzles/diabolical3"
+      ]
+    },
+    {
+      "name": "solve hardest",
+      "type": "python",
+      "request": "launch",
+      "module": "app.solver",
+      "args": [
+        "puzzles/hardest"
+      ]
+    },
+    {
+      "name": "solve mepham",
+      "type": "python",
+      "request": "launch",
+      "module": "app.solver",
+      "args": [
+        "puzzles/mepham"
+      ]
+    },
+    {
+      "name": "solve shortz301",
+      "type": "python",
+      "request": "launch",
+      "module": "app.solver",
+      "args": [
+        "puzzles/shortz301"
+      ]
+    }
+  ]
+}
